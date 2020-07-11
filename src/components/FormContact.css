@@ -1,0 +1,86 @@
+input, textarea {
+    outline: none;
+    border: none;
+}
+.input100:focus, .input100:active, .input100:visited, .textarea100:focus{
+    border-bottom-color: #eebd00!important;
+}
+.input100 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #dddddd;
+    line-height: 1.2;
+    letter-spacing: 1.4px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    padding: 0 5px;
+    border-bottom: 1px solid;
+    border-bottom-color: #ffffff;
+    margin-bottom: 1rem;
+}
+input.input100 {
+    height: 45px;
+}
+input.input100::placeholder, textarea.textarea100::placeholder{
+    color: #dddddd;
+}
+input.input100:-webkit-autofill,
+input.input100:-webkit-autofill:hover,
+input.input100:-webkit-autofill:focus,
+input.input100:-webkit-autofill:active {
+    transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    transition-delay: 9999s;
+    -webkit-transition-delay: 9999s;
+}
+.focus-input100::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+    background: #eebd00;
+}
+.textarea100{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #dddddd;
+    line-height: 2.8;
+    letter-spacing: 1.4px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    padding: 0 5px;
+    border-bottom: 1px solid;
+    border-bottom-color: #ffffff;
+    margin-bottom: 1rem;
+}
+input.has-valid{
+    border-bottom-color: #eebd00;
+}
+input.has-error{
+    border-bottom-color: rgba(255, 0, 0, 0.87);
+    color: rgba(255, 0, 0, 0.87);
+}
+.btn-widget{
+    font-family: 'Open Sans', sans-serif!important;
+    font-size: 15px!important;
+    letter-spacing: 1px;
+    background-color: #eebd00!important;
+    border-color: #eebd00!important;
+    border-radius: 50px!important;
+    color: #000000!important;
+    padding: 8px 13px!important;
+    transition: .3s!important;
+}
+.btn-widget:hover{
+    color: #eebd00!important;
+    background-color: #ffffff!important;
+}
